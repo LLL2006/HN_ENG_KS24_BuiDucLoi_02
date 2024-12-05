@@ -137,7 +137,7 @@ int main(){
 				
 				break;
 			case 11:
-				
+				printf("Thoat chuong trinh");
 				break;
 		}
 	}while(choice!=11);
