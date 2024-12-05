@@ -21,10 +21,10 @@ int main(){
 		printf("4.Tim gia tri lon thu hai trong mang \n");
 		printf("5.Them mot phan tu vao dau mang \n");
 		printf("6.Xoa phan tu tai mot vi tri cu the \n");
-		printf("7.Sap xep mang theo thu tu giam dan \n");
+		printf("7.Sap xep mang theo thu tu giam dan(insertion sort)\n");
 		printf("8.Nhap mot phan tu de tim kiem trong mang \n");
 		printf("9.In ra toan bo so nguyen to trong mang da duoc binh phuong \n");
-		printf("10.Sap xep mang theo thu tu giam dan \n");
+		printf("10.Sap xep mang theo thu tu giam dan(bubble sort)\n");
 		printf("11.Thoat \n");
 		scanf("%d",&choice);
 		switch(choice){
@@ -134,7 +134,17 @@ int main(){
 				
 				break;
 			case 10:
-				
+				for(int i = 0; i < size -1; i++){
+					for(int j = 0; j < size - i - 1; j++){
+						if(arr[j] > arr[j + 1]) {
+							int temp = arr[j];
+							arr[j] = arr[j + 1];
+							arr[j + 1] = temp;
+				printf("Mang sau khi sap xep: \n");
+				for(int i = size - 1; i >= 0; i--){
+					printf("%d ",arr[i]);
+				}
+				printf("\n");
 				break;
 			case 11:
 				printf("Thoat chuong trinh");
